@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "cors-anywhere": "^0.4.4",
+    "flask": "^0.2.10"
+  }
+}
