@@ -150,9 +150,7 @@ function App() {
               <th>Date</th>
               <th>Trade Code</th>
                <th>High</th>
-             
               <th>Low</th>
-              <th>High</th>
               <th>Open</th>
                <th>Close</th>
               <th>Volume</th>
@@ -164,12 +162,11 @@ function App() {
               <tr key={item.id}>
                 <td contentEditable onBlur={(e) => handleEditData(item.id, 'date', e.target.innerText)}>{item.date}</td>
                 <td contentEditable onBlur={(e) => handleEditData(item.id, 'trade_code', e.target.innerText)}>{item.trade_code}</td>
-                <td contentEditable onBlur={(e) => handleEditData(item.id, 'close', e.target.innerText)}>{item.close}</td>
-                                <td contentEditable onBlur={(e) => handleEditData(item.id, 'high', e.target.innerText)}>{item.high}</td>
+                <td contentEditable onBlur={(e) => handleEditData(item.id, 'high', e.target.innerText)}>{item.high}</td>
                 <td contentEditable onBlur={(e) => handleEditData(item.id, 'low', e.target.innerText)}>{item.low}</td>
 
                 <td contentEditable onBlur={(e) => handleEditData(item.id, 'open', e.target.innerText)}>{item.open}</td>
-                                <td contentEditable onBlur={(e) => handleEditData(item.id, 'close', e.target.innerText)}>{item.close}</td>
+                <td contentEditable onBlur={(e) => handleEditData(item.id, 'close', e.target.innerText)}>{item.close}</td>
                 <td contentEditable onBlur={(e) => handleEditData(item.id, 'volume', e.target.innerText)}>{item.volume}</td>
                 <td>
                   <button onClick={() => handleSaveEdit(item.id)}>Save</button>
